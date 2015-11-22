@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		834BB69C1C023F6100BA5CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BB69B1C023F6100BA5CED /* AppDelegate.swift */; };
+		834BB69E1C023F6100BA5CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BB69D1C023F6100BA5CED /* ViewController.swift */; };
+		834BB6A11C023F6100BA5CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834BB69F1C023F6100BA5CED /* Main.storyboard */; };
+		834BB6A31C023F6100BA5CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834BB6A21C023F6100BA5CED /* Assets.xcassets */; };
+		834BB6A61C023F6100BA5CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834BB6A41C023F6100BA5CED /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		834BB6981C023F6100BA5CED /* firebase-admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firebase-admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		834BB69B1C023F6100BA5CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		834BB69D1C023F6100BA5CED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		834BB6A01C023F6100BA5CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834BB6A21C023F6100BA5CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834BB6A51C023F6100BA5CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		834BB6A71C023F6100BA5CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834BB6951C023F6100BA5CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		834BB68F1C023F6100BA5CED = {
+			isa = PBXGroup;
+			children = (
+				834BB69A1C023F6100BA5CED /* firebase-admin */,
+				834BB6991C023F6100BA5CED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		834BB6991C023F6100BA5CED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834BB6981C023F6100BA5CED /* firebase-admin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834BB69A1C023F6100BA5CED /* firebase-admin */ = {
+			isa = PBXGroup;
+			children = (
+				834BB69B1C023F6100BA5CED /* AppDelegate.swift */,
+				834BB69D1C023F6100BA5CED /* ViewController.swift */,
+				834BB69F1C023F6100BA5CED /* Main.storyboard */,
+				834BB6A21C023F6100BA5CED /* Assets.xcassets */,
+				834BB6A41C023F6100BA5CED /* LaunchScreen.storyboard */,
+				834BB6A71C023F6100BA5CED /* Info.plist */,
+			);
+			path = "firebase-admin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834BB6971C023F6100BA5CED /* firebase-admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834BB6AA1C023F6100BA5CED /* Build configuration list for PBXNativeTarget "firebase-admin" */;
+			buildPhases = (
+				834BB6941C023F6100BA5CED /* Sources */,
+				834BB6951C023F6100BA5CED /* Frameworks */,
+				834BB6961C023F6100BA5CED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "firebase-admin";
+			productName = "firebase-admin";
+			productReference = 834BB6981C023F6100BA5CED /* firebase-admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834BB6901C023F6100BA5CED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Chris Ellsworth";
+				TargetAttributes = {
+					834BB6971C023F6100BA5CED = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 834BB6931C023F6100BA5CED /* Build configuration list for PBXProject "firebase-admin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 834BB68F1C023F6100BA5CED;
+			productRefGroup = 834BB6991C023F6100BA5CED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834BB6971C023F6100BA5CED /* firebase-admin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834BB6961C023F6100BA5CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834BB6A61C023F6100BA5CED /* LaunchScreen.storyboard in Resources */,
+				834BB6A31C023F6100BA5CED /* Assets.xcassets in Resources */,
+				834BB6A11C023F6100BA5CED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834BB6941C023F6100BA5CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834BB69E1C023F6100BA5CED /* ViewController.swift in Sources */,
+				834BB69C1C023F6100BA5CED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		834BB69F1C023F6100BA5CED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834BB6A01C023F6100BA5CED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834BB6A41C023F6100BA5CED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834BB6A51C023F6100BA5CED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834BB6A81C023F6100BA5CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		834BB6A91C023F6100BA5CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834BB6AB1C023F6100BA5CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "firebase-admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ellsworth.firebase-admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834BB6AC1C023F6100BA5CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "firebase-admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ellsworth.firebase-admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834BB6931C023F6100BA5CED /* Build configuration list for PBXProject "firebase-admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834BB6A81C023F6100BA5CED /* Debug */,
+				834BB6A91C023F6100BA5CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834BB6AA1C023F6100BA5CED /* Build configuration list for PBXNativeTarget "firebase-admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834BB6AB1C023F6100BA5CED /* Debug */,
+				834BB6AC1C023F6100BA5CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834BB6901C023F6100BA5CED /* Project object */;
+}
