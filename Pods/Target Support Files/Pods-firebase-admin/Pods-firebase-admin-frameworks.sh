@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-firebase-admin/Firebase.framework"
+  install_framework "Pods-firebase-admin/FirebaseUI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-firebase-admin/Firebase.framework"
+  install_framework "Pods-firebase-admin/FirebaseUI.framework"
 fi

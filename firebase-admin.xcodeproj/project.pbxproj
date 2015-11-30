@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5A4160B85C40240DF668731D /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A416794BDBAAFE5E102016A /* FirebaseAPI.swift */; };
-		75E7E53741B89833A3DA8361 /* Pods_firebase_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C366D111591357B58AE21 /* Pods_firebase_admin.framework */; };
 		834BB69C1C023F6100BA5CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BB69B1C023F6100BA5CED /* AppDelegate.swift */; };
 		834BB69E1C023F6100BA5CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834BB69D1C023F6100BA5CED /* ViewController.swift */; };
 		834BB6A11C023F6100BA5CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834BB69F1C023F6100BA5CED /* Main.storyboard */; };
 		834BB6A31C023F6100BA5CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834BB6A21C023F6100BA5CED /* Assets.xcassets */; };
 		834BB6A61C023F6100BA5CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834BB6A41C023F6100BA5CED /* LaunchScreen.storyboard */; };
 		83512A041C08A00600ABBAF5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83512A031C08A00600ABBAF5 /* DataViewController.swift */; };
+		836C066CECAD7A007C96252F /* Pods_firebase_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144DBAE3875126528345A02 /* Pods_firebase_admin.framework */; };
 		837CBBA41C09F0C400868E0D /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CBBA31C09F0C400868E0D /* Auth.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		83512A031C08A00600ABBAF5 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		837CBBA31C09F0C400868E0D /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		A8FA8A17C843592FEE27599D /* Pods-firebase-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebase-admin/Pods-firebase-admin.debug.xcconfig"; sourceTree = "<group>"; };
-		BD7C366D111591357B58AE21 /* Pods_firebase_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebase_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E144DBAE3875126528345A02 /* Pods_firebase_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebase_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2289BB2FB04E35738F78B81 /* Pods-firebase-admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebase-admin/Pods-firebase-admin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E7E53741B89833A3DA8361 /* Pods_firebase_admin.framework in Frameworks */,
+				836C066CECAD7A007C96252F /* Pods_firebase_admin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 		A76AAA786E07D4BFD6B25430 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD7C366D111591357B58AE21 /* Pods_firebase_admin.framework */,
+				E144DBAE3875126528345A02 /* Pods_firebase_admin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -1,10 +1,25 @@
 PODS:
   - Firebase (2.4.3)
+  - FirebaseUI/Core (0.3.1):
+    - Firebase (~> 2.2)
 
 DEPENDENCIES:
   - Firebase (~> 2.4)
+  - FirebaseUI/Core (from `https://github.com/chrisellsworth/FirebaseUI-iOS.git`,
+    branch `raise-cancelations`)
+
+EXTERNAL SOURCES:
+  FirebaseUI:
+    :branch: raise-cancelations
+    :git: https://github.com/chrisellsworth/FirebaseUI-iOS.git
+
+CHECKOUT OPTIONS:
+  FirebaseUI:
+    :commit: 31985f50e343c9c589dde27114f841b20d23ab70
+    :git: https://github.com/chrisellsworth/FirebaseUI-iOS.git
 
 SPEC CHECKSUMS:
   Firebase: 48179995b561e2262c5d4060ecdffca45fbbff8b
+  FirebaseUI: 62f01e067dcfc5c903d8b9cb7d77d03fa163c71a
 
 COCOAPODS: 0.39.0
