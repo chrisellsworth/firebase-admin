@@ -8,43 +8,86 @@
 
 import UIKit
 import Firebase
+import FirebaseUI
 
 class DataViewController: UITableViewController {
 
-    var api: FirebaseAPI?
-    var firebase: [String:AnyObject]?
-    var path: String?
-    var data = [String]()
+    var api: FirebaseAPI!
+    var ref: Firebase!
+    var firebaseDataSource: FirebaseTableViewDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let name = self.firebase?["firebaseName"] as! String
-        self.title = "\(name)\(self.path!)"
+        let components = NSURLComponents(string: self.ref.description)
+        let firebase = components!.host!.componentsSeparatedByString(".")[0]
+        
+        self.title = "\(firebase)\(components!.path!)"
 
         self.toggleActivityIndicator(true)
-        api?.token(name, callback: {
+        api.token(firebase, callback: {
             (token, error) -> Void in
             if (error != nil) {
                 print("error: \(error)")
-            } else if(token != nil) {
+                self.toggleActivityIndicator(false)
+            } else if (token != nil) {
                 print("token: \(token)")
-                self.api?.get(name, path: "/\(self.path!).json", callback: {
-                    (data, error) -> Void in
+
+                let personalToken = token!["personalToken"] as! String
+
+                self.ref.authWithCustomToken(personalToken, withCompletionBlock: {
+                    (error, auth) -> Void in
                     if (error != nil) {
                         print("error: \(error)")
+                        self.toggleActivityIndicator(false)
                     } else {
-                        print("data: \(data)")
-                        for key in data!.keys {
-                            self.data.append(key)
-                        }
+                        print("auth: \(auth)")
 
-                        NSOperationQueue.mainQueue().addOperationWithBlock({
-                            self.tableView.reloadData()
-                            self.toggleActivityIndicator(false)
+                        self.toggleActivityIndicator(false)
+                        
+                        self.firebaseDataSource = FirebaseTableViewDataSource(ref: self.ref, modelClass: FDataSnapshot.self, cellClass: DataTableViewCell.self, cellReuseIdentifier: "data", view: self.tableView)
+
+                        self.firebaseDataSource.populateCellWithBlock({
+                            (cell, object) -> Void in
+                            let snap = object as! FDataSnapshot
+                            cell.textLabel?.text = snap.ref.key
+                            
+                            if(snap.childrenCount == 0) {
+                                cell.detailTextLabel?.text = "value: \(snap.value)"
+                            } else {
+                                cell.detailTextLabel?.text = "\(snap.childrenCount) children"
+                            }
+                            
+                            
+                            let dataCell = cell as! DataTableViewCell
+                            dataCell.ref = snap.ref
                         })
+                        
+                        self.firebaseDataSource.cancelWithBlock({
+                            (error) -> Void in
+                            print("error: \(error)")
+                        })
+                        
+                        self.tableView.dataSource = self.firebaseDataSource
                     }
-                });
+                })
+
+//                self.api.get(name, path: "/\(self.path!).json", callback: {
+//                    (data, error) -> Void in
+//                    if (error != nil) {
+//                        print("error: \(error)")
+//                    } else {
+//                        print("data: \(data)")
+//                        for key in data!.keys {
+//                            self.data.append(key)
+//                        }
+//
+//                        NSOperationQueue.mainQueue().addOperationWithBlock({
+//                            self.tableView.reloadData()
+//                            self.toggleActivityIndicator(false)
+//                        })
+//                    }
+//                });
             }
         })
     }
@@ -58,30 +101,21 @@ class DataViewController: UITableViewController {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = visible
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("data", forIndexPath: indexPath)
-
-        cell.textLabel?.text = self.data[indexPath.row]
-        cell.detailTextLabel?.text = nil
-
-        return cell
-    }
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let cell = sender as? UITableViewCell {
+        if let cell = sender as? DataTableViewCell {
             let indexPath = self.tableView.indexPathForCell(cell)
             if (indexPath != nil) {
                 if let destination = segue.destinationViewController as? DataViewController {
                     destination.api = self.api
-                    destination.firebase = self.firebase
-                    destination.path = "\(self.path!)/\(self.data[indexPath!.row])"
+                    destination.ref = cell.ref!
                 }
             }
         }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = self.tableView.cellForRowAtIndexPath(indexPath)
+        self.performSegueWithIdentifier("ShowData", sender: cell)
     }
 
 }

@@ -16,6 +16,7 @@
 		83512A041C08A00600ABBAF5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83512A031C08A00600ABBAF5 /* DataViewController.swift */; };
 		836C066CECAD7A007C96252F /* Pods_firebase_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E144DBAE3875126528345A02 /* Pods_firebase_admin.framework */; };
 		837CBBA41C09F0C400868E0D /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CBBA31C09F0C400868E0D /* Auth.swift */; };
+		837CBBC51C113FB800868E0D /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CBBC41C113FB800868E0D /* DataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		834BB6A71C023F6100BA5CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83512A031C08A00600ABBAF5 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		837CBBA31C09F0C400868E0D /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		837CBBC41C113FB800868E0D /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		A8FA8A17C843592FEE27599D /* Pods-firebase-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebase-admin/Pods-firebase-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		E144DBAE3875126528345A02 /* Pods_firebase_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebase_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2289BB2FB04E35738F78B81 /* Pods-firebase-admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebase-admin/Pods-firebase-admin.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				5A416794BDBAAFE5E102016A /* FirebaseAPI.swift */,
 				83512A031C08A00600ABBAF5 /* DataViewController.swift */,
 				837CBBA31C09F0C400868E0D /* Auth.swift */,
+				837CBBC41C113FB800868E0D /* DataTableViewCell.swift */,
 			);
 			path = "firebase-admin";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				837CBBA41C09F0C400868E0D /* Auth.swift in Sources */,
+				837CBBC51C113FB800868E0D /* DataTableViewCell.swift in Sources */,
 				834BB69E1C023F6100BA5CED /* ViewController.swift in Sources */,
 				834BB69C1C023F6100BA5CED /* AppDelegate.swift in Sources */,
 				83512A041C08A00600ABBAF5 /* DataViewController.swift in Sources */,

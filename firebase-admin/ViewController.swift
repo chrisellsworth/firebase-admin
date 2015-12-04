@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class ViewController: UITableViewController {
-    var api: FirebaseAPI?
+    var api: FirebaseAPI!
 
     var firebases = [[String: AnyObject]]()
 
@@ -21,12 +21,12 @@ class ViewController: UITableViewController {
 
         self.api = FirebaseAPI()
 
-        api?.login({
+        api.login({
             (token, error) -> Void in
             if (error != nil) {
                 print("error: \(error!)")
             } else {
-                self.api?.account({
+                self.api.account({
                     (account, error) -> Void in
                     if (error != nil) {
                         print("error: \(error!)")
@@ -51,8 +51,9 @@ class ViewController: UITableViewController {
             if (indexPath != nil) {
                 if let destination = segue.destinationViewController as? DataViewController {
                     destination.api = self.api
-                    destination.firebase = self.firebases[indexPath!.row]
-                    destination.path = ""
+                    
+                    let firebase = self.firebases[indexPath!.row]["firebaseName"]!
+                    destination.ref = Firebase(url: "https://\(firebase).firebaseio.com")
                 }
             }
         }

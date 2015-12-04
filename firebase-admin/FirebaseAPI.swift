@@ -70,7 +70,7 @@ class FirebaseAPI {
                         (snapshot) -> Void in
                         if let value = snapshot.value as? [String:AnyObject] {
                             self.authData = value
-                            print("authed as \(self.auth!)")
+                            print("authed as \(self.authData)")
                             callback(self.auth?.token, nil);
                         }
                     }, withCancelBlock: {
